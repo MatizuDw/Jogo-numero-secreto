@@ -24,9 +24,7 @@ const botao = document.getElementById('meuBotao');
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
-     if (chute == ''){
-    alert('informe um número!')
-    } else {
+    
     if (chute == numeroSecreto) {
         textoNaTela('h1', 'Voçê acertou!')
         let palavraTentativas = tentativas > 1 ? 'tentativas' : 'tentativa'
