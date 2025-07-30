@@ -12,6 +12,15 @@ function mensagemInicial(){
 }
 
 mensagemInicial()
+const botao = document.getElementById('meuBotao');
+
+  botao.addEventListener('mouseover', function() {
+    botao.style.cursor = 'pointer';
+  });
+
+  botao.addEventListener('mouseout', function() {
+    botao.style.cursor = 'default';
+  });
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
